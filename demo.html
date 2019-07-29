@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fontsfirst for Reveal.js</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/reveal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/theme/black.css">
+    <style>
+      body .reveal,
+      body .reveal h3 {
+      	font-family: 'Roboto Slab';
+      	text-transform: none;
+      }
+      .reveal .slides {
+      	opacity: 0;
+      	transition: opacity 0.35s ease-in-out;
+      	-moz-transition: opacity 0.35s ease-in-out;
+      	-webkit-transition: opacity 0.35s ease-in-out;
+      }
+      .reveal.ready .slides {
+      	opacity: 1;
+      }
+      .reveal .fontinfo {
+      	padding: 1em;
+      	margin-top: 2em;
+      	color: black;
+      	background-color: lightgreen;
+      	display: inline-block;
+      }
+      .fontinfo:after {
+      	content: 'This page can use remote (Google/Typekit) fonts.'
+      }
+      .reveal .small {
+      	font-size: 0.4em
+      }
+      .selfhostfonts .fontinfo {
+      	background-color: orange;
+      }
+      .selfhostfonts .fontinfo:after {
+      	content: 'This page can not use remote (Google/Typekit) fonts and falls back to the self-hosted font.'
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section class="center">
+          <h3>Fontsfirst.js</h3><br>
+          <ol>
+            <li>Uses WebFontLoader.js to load remote fonts</li>
+            <li>Will use your fallback self-hosted font</li>
+            <li>Sets that preference during the session</li>
+            <li>Reveal.js will start when the fonts are loaded</li>
+          </ol>
+          <p class="fontinfo small"></p>
+          <p class="small">If the rectangle above is orange, then this page can not use remote (Google/Typekit) fonts and falls back to the self-hosted font. Turn off your Adblocker, quit your browser and reload this page. If the rectangle is still orange, then probably your ISP blocks access to the font hosting.</p>
+        </section>
+        <section class="center">
+          <h4>Options</h4>
+          <p class="small">This plugin returns a 'promise' if the font from whatever source is loaded. Reveal.js will then continue initialisation. This demo sets opacity to 0 and then to 1 if Reveal.js is ready, to make sure that no Flash Of Unstyled Text is shown. </p>
+          <p>From the Reveal options you can:</p>
+          <ol>
+            <li>Set Promise polyfill on or off</li>
+            <li>Set the timeout</li>
+            <li>Set modules (Google)</li>
+            <li>Set url to fallback font css</li>
+            <li>Turn on debug mode</li>
+          </ol>
+        </section>
+      </div>
+    </div>
+    <script src="assets/js/revealjs/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+      	transition: 'convex',
+      	fontsfirst: {
+      		debug: true,
+      		modules: {
+      			google: {
+      				families: ['Roboto Slab:300,400:latin']
+      			}
+      		},
+      		timeout: 1500,
+      		selfhostcss : "assets/fonts/robotoslab.css"
+      	},
+      	dependencies: [
+      		{ src: 'http://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js'},
+      		{ src: 'assets/js/revealjs/plugin/fontsfirst/fontsfirst.js'}
+      	]
+      });
+    </script>
+  </body>
+</html>
