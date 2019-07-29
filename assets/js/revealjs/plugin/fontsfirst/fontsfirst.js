@@ -82,7 +82,7 @@ const fontsFirst = window.fontsFirst || (function () {
 
 		if (window.Promise) {
 
-			console.log("Promise supported")
+			debugLog("Promise supported");
 
 			return new Promise(function( resolve ) {
 
