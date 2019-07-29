@@ -1,9 +1,11 @@
 # reveal.js-fontsfirst
 A plugin for [Reveal.js](https://revealjs.com) that makes sure that your fonts get loaded before initialising Reveal.js.
 
-Sometimes when you use a Google or Typekit font, it takes some time to load the font. Your presentation will then first show in a default font. Also, if you use an Adblocker like Ghostery, it is possible that the remote font will also not load at all. This plugin fixes that, but you do need to provide your self-hosted fallback fonts.
+Sometimes when you use a Google or Typekit font, it takes some time to load the font. Your presentation will then first show in a default font and then jump to the correct font (known as a 'FOUT', a Flash Of Unstyled Text). 
 
-Here's a [demo](https://martinomagnifico.github.io/reveal.js-fontsfirst/demo.html) of a project that uses the FontsFirst.js plugin.
+Also, if you use an Adblocker like Ghostery, it is possible that the remote font will also not load at all. This plugin fixes that, but you do need to provide your self-hosted fallback fonts.
+
+Here's a [demo](https://martinomagnifico.github.io/reveal.js-fontsfirst/demo.html) of a simple project that uses the FontsFirst.js plugin.
 
 
 FontsFirst.js works like this:
