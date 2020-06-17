@@ -1,0 +1,16 @@
+{
+    "name": "reveal.js-fontsfirst",
+    "version": "1.0.1",
+    "description": "A plugin for Reveal.js that makes sure that your fonts get loaded before initialising Reveal.js",
+    "keywords": "reveal, reveal.js, fonts",
+    "homepage": "https://github.com/Martinomagnifico/reveal.js-fontsfirst",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Martinomagnifico/reveal.js-fontsfirst.git"
+    },
+    "peerDependencies": {
+        "reveal.js": "^4.0"
+    },
+    "author": "Martijn De Jongh",
+    "license": "MIT, Copyright (C) 2020 Martijn De Jongh"
+}

@@ -1,0 +1,40 @@
+.backgrounds {
+  background: #1a1626; }
+
+.slides {
+  opacity: 0;
+  -webkit-transition: opacity .5s ease;
+  -o-transition: opacity .5s ease;
+  transition: opacity .5s ease; }
+
+.reveal.ready .slides {
+  opacity: 1; }
+
+body .reveal, body .reveal h1, body .reveal h2, body .reveal h3, body .reveal h4, body .reveal p, body .reveal ul {
+  font-family: 'Roboto Slab';
+  text-transform: none; }
+
+html .reveal .fontinfo {
+  padding: 1em;
+  margin-top: 2em;
+  color: black;
+  background-color: red;
+  display: inline-block; }
+
+html .reveal .fontinfo:after {
+  content: 'The WebfontLoader script did not load.'; }
+
+html.wf-active .reveal .fontinfo {
+  background-color: lightgreen; }
+
+html.wf-active .reveal .fontinfo:after {
+  content: 'This page can use remote (Google/Typekit) fonts.'; }
+
+html.wf-active.selfhostfonts .reveal .fontinfo {
+  background-color: orange; }
+
+html.wf-active.selfhostfonts .reveal .fontinfo:after {
+  content: 'This page can (or could) not use remote (Google/Typekit) fonts and falls back to the self-hosted font.'; }
+
+.reveal .small {
+  font-size: 0.4em; }
