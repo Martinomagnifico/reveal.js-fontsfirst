@@ -2,7 +2,7 @@
     "name": "reveal.js-fontsfirst",
     "version": "1.0.1",
     "description": "A plugin for Reveal.js that makes sure that your fonts get loaded before initialising Reveal.js",
-    "keywords": "reveal, reveal.js, fonts",
+    "keywords": "reveal, reveal.js, reveal-plugin, plugin, fonts",
     "homepage": "https://github.com/Martinomagnifico/reveal.js-fontsfirst",
     "repository": {
         "type": "git",

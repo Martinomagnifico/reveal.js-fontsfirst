@@ -49,7 +49,7 @@ This plugin is published to, and can be installed from, npm.
 ```javascript
 npm install reveal.js-fontsfirst
 ```
-
+The FontsFirst plugin folder can then be referenced from `node_modules/reveal.js-fontsfirst/plugin/fontsfirst `
 
 
 ## Configuration
@@ -90,4 +90,4 @@ If you like it, please star this repo.
 ## License
 MIT licensed
 
-Copyright (C) 2019 Martijn De Jongh (Martino)
+Copyright (C) 2020 Martijn De Jongh (Martino)
