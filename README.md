@@ -1,4 +1,7 @@
 # FontsFirst
+
+[![Version](https://img.shields.io/npm/v/reveal.js-fontsfirst)](#) [![Downloads](https://img.shields.io/npm/dt/reveal.js-fontsfirst)](https://github.com/Martinomagnifico/reveal.js-fontsfirst/archive/refs/heads/master.zip)
+
 A plugin for [Reveal.js](https://revealjs.com) that makes sure that your fonts get loaded before initialising Reveal.js.
 
 [![Screenshot](screenshot.png)](https://martinomagnifico.github.io/reveal.js-fontsfirst/demo.html)
