@@ -12,7 +12,6 @@ Also, if you use an Adblocker like Ghostery, it is possible that the remote font
 
 Here's a [demo](https://martinomagnifico.github.io/reveal.js-fontsfirst/demo.html) of a simple project that uses the FontsFirst plugin.
 
-
 FontsFirst works like this:
 
 * It uses WebFontLoader.js to load remote fonts.
